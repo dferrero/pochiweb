@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(to right, #e79873, #f3571a);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-image: url('/Images/nav1.jpg');
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul,
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+a:hover {
+    background-color: #8d3576;
+}
+
+.enlaceinicio,
+.enlaceproduct,
+.enlacecontact,
+.enlaceshop {
+    flex: 1;
+    text-align: center;
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #65aedf;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.flex-container {
+    display: flex;
+    text-align: center;
+    padding: 20px; /* Espacio dentro del contenedor */
+    border-width: 2px;
+    border-style: solid;
+    border-color: purple;
+    margin-left: 20px; /* Márgenes laterales izquierdos */
+    margin-right: 20px; /* Márgenes laterales derechos */
+    margin-top: 20px; /* Márgen superior */
+    margin-bottom: 20px; /* Márgen inferior */
+    box-sizing: border-box;
+    width: calc(70% - 40px); /* Ajusta el ancho total considerando los márgenes laterales */
+}
+
+.imagen-noticia {
+    width: 400px; /* Establece el ancho deseado para todas las imágenes */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 100%; /* Evita que la imagen se desborde del contenedor si su tamaño original es menor que el ancho especificado */
+    margin-left: 10px; /* Márgenes laterales izquierdos */
+    margin-right: 20px; /* Márgenes laterales derechos */
+    margin-top: 40px; /* Márgen superior */
+    margin-bottom: 20px; /* Márgen inferior */
+}
+
+.contenido h2 {
+    font-size: 28px; /* Tamaño de la letra para los elementos h2 */
+    font-family: 'Tu Fuente','Gill Sans MT'; /* Cambia 'Tu Fuente' por la fuente que prefieras */
+    text-align: center; /* Centro solo el texto dentro de .contenido */
+}
+
+.contenido p {
+    font-size: 18px; /* Tamaño de la letra para los párrafos */
+    font-family: 'Tu Otra Fuente','Gill Sans MT'; /* Cambia por la fuente que prefieras */
+    text-align: center; /* Centro solo el texto dentro de .contenido */
+}
+
+
+.contenido a.enlacesnoticia {
+    font-size: 16px; /* Tamaño de la letra para los enlaces dentro del contenido */
+    /* Puedes cambiar la fuente si lo deseas, pero esto heredará la fuente del contenedor padre */
+}
+
+.contenido {
+    max-width: 600px;
+    width: 100%;
+}
+
+.enlacenoticia {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(184, 45, 184);
+    color: #333333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #af4ca2;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: auto; /* Empuja el pie de página hacia abajo para que siempre esté en la parte inferior */
+}

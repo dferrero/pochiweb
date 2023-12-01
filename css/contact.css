@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    background: linear-gradient(to right, #e79873, #f3571a);
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra el contenido en el cuerpo de la página */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-image: url('/Images/nav1.jpg');
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img {
+    max-width: 100%; /* La imagen no debe exceder el ancho del contenedor */
+    height: auto; /* Ajusta automáticamente la altura en proporción al ancho */
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;/* Quita los puntos de la lista */
+    display: flex;/* Hace que los elementos de la lista se comporten como flexbox */
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    display: flex; /* Hace que los elementos de la lista se comporten como flexbox */
+}
+
+li {
+    display: inline-block; /* Hace que los elementos de la lista sean en línea */
+}
+
+/* Estilos para los enlaces del nav */
+.enlaceinicio,
+.enlaceproduct,
+.enlacenoticias,
+.enlaceshop{
+    flex: 1;
+    text-align: center;
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #65aedf;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #333;
+    margin-right: 10px;
+}
+
+
+form{
+    border-width: 2px;
+    border-style: solid;
+    border-color: purple;
+    width: calc(50% - 40px); /* Ajusta el ancho total considerando los márgenes laterales */
+    padding: 20px; /* Espacio dentro del formulario */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    margin-left: 500px;
+    margin-top: 100px;
+    font-family: 'Tu Fuente','Gill Sans MT'; /* Cambia 'Tu Fuente' por la fuente que prefieras */
+    font-size: 20px; /* Tamaño de la letra para los elementos h2 */
+    
+}
+
+form label {
+    display: block; /* Hace que las etiquetas estén en una nueva línea */
+    margin-bottom: 10px; /* Espacio entre etiquetas y campos de entrada */
+}
+
+form input,
+form textarea {
+    width: 100%; /* Ocupa el ancho completo del formulario */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    margin-bottom: 15px; /* Espacio entre campos de entrada */
+}
+
+form input[type="submit"] {
+    width: auto; /* Ajusta el ancho del botón automáticamente */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #af4ca2;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: auto; /* Empuja el pie de página hacia abajo para que siempre esté en la parte inferior */
+}
+
+
+
